@@ -1,0 +1,20 @@
+{
+    "name": "iamdual/upload",
+    "description": "Safe, useful, and simple PHP file upload class.",
+    "homepage": "https://github.com/iamdual/upload",
+    "type": "library",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Ekin K.",
+            "email": "sudo@gmx.fr"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "iamdual\\": "src/"
+        }
+    }
+}
+
