@@ -166,7 +166,7 @@ class Upload {
     }
 
     /**
-     * The new name of the uploaded file (Example: newbie.png)
+     * The new name of the uploaded file (Example: newbie)
      * @param string $name
      */
     public function new_name($name) {
