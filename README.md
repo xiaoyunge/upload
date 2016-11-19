@@ -41,7 +41,7 @@ if (isset($_FILES["file"])) {
 | `new_name(String)` | The new name of the uploaded file (Example: my_image) |
 | `path(String)` | The path where files will be uploaded |
 | `override(boolean)` | Override (write over) the file with the same name |
-| `check()` | Check the file with the same name |
+| `check()` | Check everything is okay |
 | `error()` | Get error message |
 | `upload()` |  Upload the file. |
 | `get_name()` |  Get uploaded file name. Returning String |
