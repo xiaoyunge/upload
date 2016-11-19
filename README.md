@@ -38,7 +38,7 @@ if (isset($_FILES["file"])) {
 | `allowed_types(array())` | Allowed mime types (Example: image/png, image/jpeg) |
 | `disallowed_types(array())` | Disllowed mime types |
 | `max_size(int)` | Maximum file size in MB  |
-| `new_name(String)` | The new name of the uploaded file (Example: newbie.png) |
+| `new_name(String)` | The new name of the uploaded file (Example: my_image) |
 | `path(String)` | The path where files will be uploaded |
 | `override(boolean)` | Override (write over) the file with the same name |
 | `check()` | Check the file with the same name |
