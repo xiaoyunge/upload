@@ -93,86 +93,103 @@ class Upload {
 
         $this->file = $file;
 
+        return $this;
     }
 
     /**
      * Allowed file extensions (Example: png, gif, jpg)
      * @param array $extensions
+     * @return $this
      */
     public function allowed_extensions($extensions) {
 
         $this->extensions = (is_array($extensions) ? $extensions : null);
 
+        return $this;
     }
 
     /**
      * Disllowed file extensions (Example: html, php, dmg)
      * @param array $extensions
+     * @return $this
      */
     public function disallowed_extensions($extensions) {
 
         $this->disallowed_extensions = (is_array($extensions) ? $extensions : null);
 
+        return $this;
     }
 
     /**
      * Allowed mime types (Example: image/png, image/jpeg)
      * @param array $types
+     * @return $this
      */
     public function allowed_types($types) {
 
         $this->types = (is_array($types) ? $types : null);
 
+        return $this;
     }
 
     /**
      * Disllowed mime types
      * @param array $types
+     * @return $this
      */
     public function disallowed_types($types) {
 
         $this->disallowed_types = (is_array($types) ? $types : null);
 
+        return $this;
     }
 
     /**
      * Maximum file size in MB
      * @param int $size
+     * @return $this
      */
     public function max_size($size) {
 
         $this->max_size = (is_numeric($size) ? $size : null);
 
+        return $this;
     }
 
     /**
      * Override (write over) the file with the same name
      * @param boolean $override
+     * @return $this
      */
     public function override($override) {
 
         $this->override = ($override === true ? true : false);
-
+        
+        return $this;
     }
 
     /**
      * The path where files will be uploaded
      * @param string $path
+     * @return $this
      */
     public function path($path) {
 
         $this->path = $path;
-
+        
+        return $this;
     }
 
     /**
      * The new name of the uploaded file (Example: newbie)
      * @param string $name
+     * @return $this
      */
     public function new_name($name) {
 
         $this->new_name = $name . "." . $this->get_ext($this->file["name"]);
-
+        
+        return $this;
     }
 
     /**
